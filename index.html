@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Foreclosure Help Oʻahu | Oʻahu Homeowner Advocates</title>
+  <meta name="description" content="Free, confidential help for Oʻahu homeowners facing foreclosure, probate, or tax and HOA liens. Gift, Jason, and Mike — local advocates. No pressure, just options." />
+  <meta property="og:title" content="Free Foreclosure Help Oʻahu | Oʻahu Homeowner Advocates" />
+  <meta property="og:description" content="Free, confidential help for Oʻahu homeowners facing foreclosure, probate, or liens. No pressure — just options." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="team-og.jpg" />
+  <meta property="og:site_name" content="Oʻahu Homeowner Advocates" />
+  <meta property="og:locale" content="en_US" />
+  <style>
+    :root{
+      --bg:#fbf8f3; --card:#fffdfa; --text:#1c2230; --muted:#5b6778;
+      --accent:#1e40af; --accent2:#2563eb; --warm:#b45309;
+      --border:rgba(30,64,175,.10); --shadow:0 10px 28px rgba(30,64,175,.07);
+      --radius:16px; --max:1040px;
+      --sans: ui-rounded, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); line-height:1.65;
+      background:
+        radial-gradient(1100px 600px at 50% -10%, rgba(30,64,175,.07), transparent 60%),
+        radial-gradient(900px 500px at 100% 100%, rgba(245,158,11,.06), transparent 60%),
+        var(--bg);
+    }
+    a{color:var(--accent); text-underline-offset:3px}
+    a:hover{color:var(--accent2)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    header{position:sticky; top:0; z-index:20; background:rgba(251,248,243,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--border)}
+    .bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
+    .brand{display:flex; gap:12px; align-items:center; text-decoration:none; color:var(--text)}
+    .logo{width:42px; height:42px; border-radius:12px; background:var(--accent); color:#fff; display:grid; place-items:center; font-weight:900; font-size:15px}
+    .brand b{display:block; font-size:16px; line-height:1.2}
+    .brand small{color:var(--muted); font-size:12.5px}
+    nav{display:flex; gap:4px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{text-decoration:none; font-size:14px; color:#1f2933; padding:8px 10px; border-radius:12px}
+    nav a:hover{background:rgba(37,99,235,.10); color:var(--accent)}
+    @media (max-width:720px){ nav a:not(.navcta){display:none} .brand small{display:none} }
+
+    .card{background:linear-gradient(165deg, rgba(30,64,175,.05), rgba(245,158,11,.04) 55%, var(--card)); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:28px}
+    .card.warm{background:linear-gradient(165deg, rgba(245,158,11,.08), var(--card) 60%)}
+    .kicker{color:var(--accent); font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:700}
+    h1{margin:12px 0 14px; font-size:38px; font-weight:800; line-height:1.15; letter-spacing:-.02em}
+    @media (max-width:600px){ h1{font-size:30px} }
+    h2{margin:0 0 10px; font-size:24px}
+    h3{margin:0 0 6px; font-size:17px}
+    .lead{font-size:18px; max-width:62ch}
+    .muted{color:var(--muted)}
+    .small{font-size:13.5px}
+    section{margin-top:28px}
+    main{padding:22px 0 90px}
+
+    .hero{display:grid; grid-template-columns:1.3fr .7fr; gap:18px; align-items:stretch}
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} }
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:20px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:13px 18px; border-radius:12px; border:1px solid transparent; text-decoration:none; font-weight:700; font-size:15.5px; cursor:pointer; font-family:inherit}
+    .btn.primary{background:var(--accent); color:#fff}
+    .btn.primary:hover{background:var(--accent2); color:#fff}
+    .btn.secondary{background:transparent; border-color:rgba(30,64,175,.25); color:var(--accent)}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 8px 16px rgba(15,23,42,.08)}
+    .trust{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px}
+    .trust span{font-size:13.5px; font-weight:700; color:var(--accent); background:rgba(30,64,175,.07); border-radius:999px; padding:6px 12px}
+    .faces{display:flex; justify-content:center; margin:6px 0 14px}
+    .faces img{width:84px; height:84px; border-radius:50%; object-fit:cover; border:3px solid var(--card); box-shadow:var(--shadow); margin-left:-14px}
+    .faces img:first-child{margin-left:0}
+    .heroSide{display:flex; flex-direction:column; justify-content:center; text-align:center}
+    .heroSide p{margin:4px 0}
+
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
+    .chips span{background:var(--card); border:1px solid var(--border); border-radius:999px; padding:8px 14px; font-size:15px}
+
+    .team{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:14px}
+    @media (max-width:860px){ .team{grid-template-columns:1fr} }
+    .person{display:flex; flex-direction:column}
+    .person img{width:120px; height:120px; border-radius:18px; object-fit:cover; border:1px solid var(--border); box-shadow:var(--shadow); margin-bottom:14px}
+    .person .name{font-weight:800; font-size:19px}
+    .person .role{color:var(--warm); font-weight:700; font-size:14px; margin-bottom:10px}
+    .person p{margin:0 0 14px; color:var(--muted); font-size:15.5px}
+    .person .reach{margin-top:auto; font-size:14.5px; border-top:1px solid var(--border); padding-top:12px}
+    .person .reach a{display:block; text-decoration:none; font-weight:600}
+
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:6px}
+    @media (max-width:760px){ .grid3{grid-template-columns:1fr} }
+    .grid3 p{margin:0; color:var(--muted); font-size:15px}
+    .step{display:flex; gap:14px; align-items:flex-start}
+    .num{width:32px; height:32px; border-radius:10px; background:rgba(30,64,175,.08); color:var(--accent); display:grid; place-items:center; font-weight:900; flex:0 0 auto}
+
+    details{border-top:1px solid var(--border); padding:14px 0}
+    details:first-of-type{border-top:none}
+    summary{cursor:pointer; font-weight:700; list-style:none; display:flex; justify-content:space-between; gap:12px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+"; color:var(--accent); font-size:20px; line-height:1}
+    details[open] summary::after{content:"−"}
+    details p{margin:10px 0 0; color:var(--muted)}
+
+    .contact{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    @media (max-width:860px){ .contact{grid-template-columns:1fr} }
+    .who{display:flex; gap:12px; align-items:center; padding:12px 0; border-top:1px solid var(--border)}
+    .who:first-of-type{border-top:none}
+    .who img{width:48px; height:48px; border-radius:50%; object-fit:cover}
+    .who b{display:block}
+    .who a{text-decoration:none; font-size:14.5px}
+    label{display:block; font-weight:600; font-size:14px; margin:12px 0 6px}
+    input,textarea,select{width:100%; font:inherit; font-size:16px; padding:11px 12px; border:1px solid rgba(30,64,175,.18); border-radius:12px; background:#fff; color:var(--text)}
+    input:focus,textarea:focus,select:focus{outline:none; border-color:var(--accent2); box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+    textarea{min-height:120px; resize:vertical}
+    #formStatus{display:none; margin-top:12px; font-weight:700}
+
+    .legal h3{margin-top:16px}
+    .legal p{color:var(--muted); font-size:14.5px; margin:4px 0 0}
+    footer{border-top:1px solid var(--border); padding:24px 0 40px; color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#top">
+        <div class="logo">ʻO</div>
+        <div><b>Oʻahu Homeowner Advocates</b><small>Free foreclosure &amp; distressed home support • Oʻahu</small></div>
+      </a>
+      <nav>
+        <a href="#team">Our Team</a>
+        <a href="#options">Options</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn primary navcta" href="#contact" style="padding:9px 14px;font-size:14px;color:#fff">Get free help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <div class="hero">
+      <div class="card">
+        <div class="kicker">For homeowners facing foreclosure or a distressed home situation</div>
+        <h1>Free Foreclosure Help for Oʻahu Homeowners — Know Your Options Before Making Any Decision.</h1>
+        <p class="lead">No pressure. No judgment. Just options. If you're overwhelmed, we'll slow it down and take it one clear step at a time.</p>
+        <p class="lead" style="margin-top:0">Aloha — we're <strong>Gift, Jason, and Mike</strong>, local homeowner advocates here on Oʻahu. <strong>Our help is 100% free of charge.</strong> One conversation could show you options you didn't know you had.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Get free help</a>
+          <a class="btn secondary" href="#team">Meet the team</a>
+        </div>
+        <div class="trust"><span>100% FREE</span><span>Confidential</span><span>No pressure to sell</span><span>Local Oʻahu advocates</span></div>
+        <p class="muted small">Not legal or financial advice — we are advocates, not attorneys. <a href="#legal">Full disclaimer →</a></p>
+      </div>
+      <aside class="card warm heroSide">
+        <div class="faces">
+          <img src="gift.jpg" alt="Gift Kitkuakul" />
+          <img src="jason.jpg" alt="Jason Kim" />
+          <img src="mike.jpg" alt="Mike Yamamoto" />
+        </div>
+        <p><strong>Real neighbors. Real aloha.</strong></p>
+        <p class="muted small">It costs nothing to ask questions and explore your path.</p>
+        <div class="ctaRow" style="justify-content:center;margin-top:14px">
+          <a class="btn primary" href="tel:+18082155828">Call Gift</a>
+          <a class="btn secondary" href="tel:+18082077705">Call Jason</a>
+          <a class="btn secondary" href="tel:+18084006686">Call Mike</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card">
+      <h2>Does this sound like you?</h2>
+      <div class="chips">
+        <span>Behind on mortgage</span><span>Received a foreclosure notice</span><span>Probate / inherited home</span>
+        <span>Tax lien</span><span>HOA lien</span><span>Vacant / distressed property</span><span>Hardship (job loss, illness, divorce)</span>
+      </div>
+      <p class="muted" style="margin:14px 0 0">You likely have more time and options than you think.</p>
+    </section>
+
+    <section id="team">
+      <div class="kicker">Meet the team</div>
+      <h2>Your neighbors, here to help</h2>
+      <p class="muted" style="margin:0">Homeowner Advocates • Outreach • Educators — committed to helping Oʻahu homeowners, free of charge.</p>
+      <div class="team">
+        <div class="card person">
+          <img src="gift.jpg" alt="Gift Kitkuakul, Ph.D." />
+          <div class="name">Gift Kitkuakul, Ph.D.</div>
+          <div class="role">Homeowner Advocate • Outreach • Educator</div>
+          <p>I advocate with heart and clarity, serving as a dedicated guide for Hawaiʻi families facing housing challenges. I focus on listening first—truly understanding each situation—to help homeowners simplify their options and find a clear path forward. My approach is built on patience and honest communication, ensuring every homeowner feels supported and empowered to make the best decision for their future without any pressure.</p>
+          <div class="reach"><a href="tel:+18082155828">(808) 215-5828</a><a href="mailto:gift.saveyourhomes@gmail.com">gift.saveyourhomes@gmail.com</a></div>
+        </div>
+        <div class="card person">
+          <img src="jason.jpg" alt="Jason Kim" />
+          <div class="name">Jason Kim</div>
+          <div class="role">Homeowner Advocate • Outreach • Educator</div>
+          <p>I serve homeowners across Hawaiʻi with steady guidance and clear communication. I help families navigate complex property situations by explaining their options plainly, organizing the details, and outlining practical next steps. My approach is education-first and pressure-free, ensuring every homeowner understands their choices and can move forward confidently with trusted local support.</p>
+          <div class="reach"><a href="tel:+18082077705">(808) 207-7705</a><a href="mailto:saveyourhome808@gmail.com">saveyourhome808@gmail.com</a></div>
+        </div>
+        <div class="card person">
+          <img src="mike.jpg" alt="Mike Yamamoto" />
+          <div class="name">Mike Yamamoto</div>
+          <div class="role">Homeowner Advocate • Outreach • Educator</div>
+          <p>I'm a local Oʻahu neighbor who helps homeowners facing foreclosure, probate, and liens understand where they stand and what their options are. When the mail piles up and the notices get scary, I'm the friendly voice who sits down with you, talks story, and walks through every choice — keeping the home, pausing, or selling — without any pressure. My job is to make sure you never have to face this alone, and that you move forward knowing every option available to you.</p>
+          <div class="reach"><a href="tel:+18084006686">(808) 400-6686</a><a href="mailto:mikescottyama@gmail.com">mikescottyama@gmail.com</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="options">
+      <div class="kicker">Your options</div>
+      <h2>Every path, explained plainly</h2>
+      <div class="grid3">
+        <div><h3>Keep your home</h3><p>Loan modifications, repayment plans, and hardship programs — even after a notice.</p></div>
+        <div><h3>Sell your home</h3><p>Only if you choose to — on a fair timeline, with no pressure.</p></div>
+        <div><h3>Probate &amp; liens</h3><p>Inherited homes, tax liens, and HOA liens — know the basics first.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="kicker">How it works</div>
+      <h2>Three simple steps</h2>
+      <div class="grid3">
+        <div class="step"><div class="num">1</div><div><h3>Stabilize</h3><p>We find the real deadlines and immediate risks, so the panic can stop.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Choose</h3><p>We map out all your options — keeping the home, pausing, or selling.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Act</h3><p>We walk beside you as you make a plan and connect with the right resources.</p></div></div>
+      </div>
+    </section>
+
+    <section class="card" id="faq">
+      <div class="kicker">FAQ</div>
+      <h2>Questions homeowners ask most</h2>
+      <details><summary>Is your help really free?</summary><p>Yes. Our homeowner support and resource connections are 100% free of charge for homeowners. There's no obligation and no pressure to sell.</p></details>
+      <details><summary>Do I have to sell my home?</summary><p>No. Understanding your options comes first — keeping the home, pausing foreclosure, negotiating, or selling only if you choose. No one should make that decision without knowing all the alternatives.</p></details>
+      <details><summary>What should I bring (or tell you) on the first call?</summary><p>If you have them: any foreclosure notice, your loan servicer or lender's name, court case information, auction date, HOA or tax letters, and your best contact details. If you don't have documents, that's okay — we'll start with what you know.</p></details>
+      <details><summary>Are you lawyers or HUD counselors?</summary><p>No. We are homeowner advocates. We share general information to help you understand your situation and options. We don't provide legal or tax advice. When those services are needed, we connect you with trusted, verified professionals.</p></details>
+      <details><summary>If there's an urgent deadline, what should I do?</summary><p>Call or text one of us as soon as possible so we can confirm dates and identify the fastest next steps. If you're in immediate danger of losing housing, contact a HUD-approved housing counselor or Legal Aid right away.</p></details>
+    </section>
+
+    <section id="contact">
+      <div class="kicker">Contact</div>
+      <h2>One free call could change everything</h2>
+      <p class="muted" style="margin:0 0 14px">Most homeowners feel real relief after just one conversation. No cost, no obligation — ever.</p>
+      <div class="contact">
+        <div class="card">
+          <h3>Call or text any of us</h3>
+          <div class="who"><img src="gift.jpg" alt="" /><div><b>Gift</b><a href="tel:+18082155828">(808) 215-5828</a> · <a href="mailto:gift.saveyourhomes@gmail.com">gift.saveyourhomes@gmail.com</a></div></div>
+          <div class="who"><img src="jason.jpg" alt="" /><div><b>Jason</b><a href="tel:+18082077705">(808) 207-7705</a> · <a href="mailto:saveyourhome808@gmail.com">saveyourhome808@gmail.com</a></div></div>
+          <div class="who"><img src="mike.jpg" alt="" /><div><b>Mike</b><a href="tel:+18084006686">(808) 400-6686</a> · <a href="mailto:mikescottyama@gmail.com">mikescottyama@gmail.com</a></div></div>
+          <p class="muted small" style="margin-top:12px">Serving Oʻahu. If we miss your call, we will return it. In immediate danger of losing housing? Contact a HUD-approved counselor or Legal Aid right away.</p>
+        </div>
+        <div class="card">
+          <h3>Or send us a message</h3>
+          <form id="contactForm" action="https://formspree.io/f/meeplvzw" method="POST">
+            <input type="hidden" name="_subject" value="New message from the Oʻahu Homeowner Advocates website" />
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(808) 123-4567" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <label for="message">What's going on?</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're facing (notice of default, hardship, probate, HOA lien, etc.) and any deadline date."></textarea>
+            <div class="ctaRow" style="margin-top:14px"><button class="btn primary" type="submit" id="submitBtn">Send message</button></div>
+            <div id="formStatus"></div>
+            <p class="muted small">By submitting this form you agree to be contacted at the number or email you provide. Your information is used only to respond to your request and is never sold or shared for marketing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="card legal" id="legal">
+      <div class="kicker">Disclaimer &amp; privacy</div>
+      <h2>Important information</h2>
+      <h3>Not professional advice</h3>
+      <p>The members of Oʻahu Homeowner Advocates are homeowner advocates and are not licensed attorneys, mortgage professionals, financial advisors, tax advisors, or HUD-approved housing counselors. Information provided through this website or in person is general and educational only and is not legal, financial, tax, or real estate advice. No attorney-client or fiduciary relationship is created by using this site or contacting us.</p>
+      <h3>Free to homeowners</h3>
+      <p>We do not charge homeowners fees or request advance payments, and we do not take any portion of your money or property. In some cases, a member of our team may be interested in purchasing a home if the homeowner chooses to sell — this is always disclosed upfront, and you are never obligated to sell to anyone.</p>
+      <h3>Urgent situations</h3>
+      <p>If you are facing an imminent foreclosure sale or court deadline, contact a licensed Hawaiʻi attorney, the Legal Aid Society of Hawaiʻi, or a HUD-approved housing counselor immediately. Do not rely on this website in place of timely professional help.</p>
+      <h3>Privacy</h3>
+      <p>Messages sent through the form are delivered through a third-party form service (Formspree) and used only to respond to your request. We never sell or share your information for marketing.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong style="color:var(--text)">Oʻahu Homeowner Advocates</strong> — Gift Kitkuakul, Ph.D. • Jason Kim • Mike Yamamoto<br />
+      Free foreclosure and distressed home support on Oʻahu. Not a law firm. Homeowners are never obligated to sell.
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const statusEl = document.getElementById("formStatus");
+    const btn = document.getElementById("submitBtn");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      btn.disabled = true; btn.textContent = "Sending...";
+      try {
+        const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+        statusEl.style.display = "block";
+        if (res.ok) {
+          statusEl.style.color = "#1e40af";
+          statusEl.textContent = "Mahalo! Your message was sent. One of us will follow up with you shortly.";
+          form.reset();
+        } else { throw new Error(); }
+      } catch {
+        statusEl.style.display = "block";
+        statusEl.style.color = "#b91c1c";
+        statusEl.textContent = "Sorry, something went wrong. Please call or text us directly.";
+      }
+      btn.disabled = false; btn.textContent = "Send message";
+    });
+  </script>
+</body>
+</html>
